@@ -6,8 +6,8 @@ import "../modules/my-ui/common.css"
 // 按需加载 
 Vue.use(MyUI, {
   components: [
-    'Button',
-    'Input',
+    'MyButton',
+    'MyInput',
   ]
 });
 

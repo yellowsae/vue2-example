@@ -1,6 +1,11 @@
 
 <template>
-  <button :class="['my-btn', type]"></button>
+  <button 
+    :class="['my-btn', type]"
+    @click="btnClick($event)"
+  >
+    <slot></slot>
+  </button>
 </template>
 
 <script>
@@ -12,6 +17,11 @@ export default {
       type: String,
       // 默认值
       default: 'primary'
+    }
+  },
+  methods: {
+    btnClick(e) {
+      this.$emit('click', e)
     }
   }
 }
@@ -30,7 +40,6 @@ export default {
   border: none;
   outline: none;
   background-color: #409eff;
-
   &.primary {
     background-color: #409eff;
   }
@@ -39,6 +48,9 @@ export default {
   }
   &.warning {
     background-color: #e6a23c;
+  }
+  &.danger {
+    background-color: #f56c6c;
   }
 }
 

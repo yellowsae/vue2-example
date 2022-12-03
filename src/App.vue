@@ -1,12 +1,23 @@
 <template>
   <div id="app">
-    <my-btn>我的按钮</my-btn>
+    <my-button @click="output" type="danger">
+      Button
+    </my-button>
+
+    <hr>
+    <my-input placeholder="我的输入框" value="aaa"></my-input>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+    output(e) {
+      // console.log(e)
+      console.log('按钮被点击了')
+    }
+  }
 }
 </script>

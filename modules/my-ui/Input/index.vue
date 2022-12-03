@@ -23,8 +23,9 @@ export default {
 
 <style lang="scss">
 .my-input {
-  height: 34px;
-  border: 1px solid #dcdfe6;
-  background-color: #fff;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 10px;
 }
 </style>
