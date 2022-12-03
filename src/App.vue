@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <my-btn>我的按钮</my-btn>
   </div>
 </template>
 

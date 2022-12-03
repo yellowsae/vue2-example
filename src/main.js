@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import MyUI from "../modules/my-ui";
-
+import "../modules/my-ui/common.css"
 
 // 按需加载 
 Vue.use(MyUI, {
