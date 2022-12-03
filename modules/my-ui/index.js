@@ -1,17 +1,38 @@
-import MyButton from './Button'
-import MyInput from './Input'
+import Button from './Button'
+import Input from './Input'
 
 
 
 const MyUI = {}
 
+// 给每一个组件都设计一个对象 
+const MyButton = {}
+const MyInput = {}
+
+
+// 单个注册组件
+MyButton.install = function (Vue) {
+  Vue.component(Button.name, Button)
+}
+MyInput.install = Vue => Vue.component(Input.name, Input)
+
+
+// 导出单个组件 
+export {
+  MyButton,
+  MyInput,
+}
+
+
 
 // 当前组件库中的所有组件： 为了根据名称进行对比 进行注册
 const COMPONENTS = [
   // 写好的组件
-  MyButton,
-  MyInput
+  Button,
+  Input
 ]
+
+
 
 
 
