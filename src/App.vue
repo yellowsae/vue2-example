@@ -3,7 +3,7 @@
     <my-button @click="output" type="danger">
       Button
     </my-button>
-
+    <hr>
     <hr>
     <my-input placeholder="我的输入框" value="aaa"></my-input>
   </div>
