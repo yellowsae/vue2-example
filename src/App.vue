@@ -14,7 +14,7 @@ export default {
   name: 'App',
   methods: {
     output(e) {
-      console.log(e)
+      // console.log(e)
       console.log('按钮被点击了')
     }
   }
