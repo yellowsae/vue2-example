@@ -4,7 +4,6 @@
       Button
     </my-button>
     <hr>
-    <hr>
     <my-input placeholder="我的输入框" value="aaa"></my-input>
   </div>
 </template>
